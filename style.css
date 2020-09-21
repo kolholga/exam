@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Garamond_Regular';
+    src: url('fonts/garamond/Garamond_Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Garamond_Italic';
+    src: url('fonts/garamond/Garamond_Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Garamond_Bold';
+    src: url('fonts/garamond/Garamond_Bold.ttf');
+}
+
+body {
+    font-family: 'Garamond_Regular';
+    font-size: 18px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.header_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.name_company {
+    flex: 1;
+}
+
+.menu_social {
+    display: flex;
+    flex: 7;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu_social ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 14px;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+    margin: 0 14px;
+}
+
+hr {
+    border: none;
+    color: #9e9e9e2e;
+    background-color: #9e9e9e2e;
+    height: 2px;
+}
+
+.hello {
+    display: flex;
+    align-items: center;
+}
+
+.hello_text {
+    width: 50%;
+    padding: 70px;
+}
+
+.hello_text p {
+    font-family: 'Garamond_Bold';
+    font-size: 60px;
+}
+
+.hello_text1 {
+    font-family: 'Garamond_Regular';
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.article_text {
+    font-family: 'Garamond_Regular';
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    margin-top: 30px;
+    border-color: #dcd0d0;
+    border-radius: 5px;
+    color: grey;
+    background: none;
+}
+
+.hello_img {
+    width: 50%;
+    overflow: hidden;
+}
+
+.story1 {
+    display: flex;
+    align-items: center;
+}
+
+.story1_img {
+    width: 30%;
+    overflow: hidden;
+}
+
+.story1_text {
+    width: 70%;
+    padding: 70px;
+}
+
+.story2 {
+    display: flex;
+    align-items: center;
+}
+
+.story2_img {
+    width: 30%;
+    overflow: hidden;
+}
+
+.story2_text {
+    width: 70%;
+    padding: 70px;
+}
+
+.slider_container {
+    position: relative;
+    width: 1600px;
+    height: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image_container {
+}
+
+.slick-prev:before, .slick-next:before{
+    color:gray;
+}
+
+/* .gallery_img {
+    float: left;
+} */
+
+.slider_button {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#img1:target~.image_container {
+    left: 0px;
+}
+
+#img2:target~.image_container {
+    left: -400px;
+}
+
+#img3:target~.image_container {
+    left: -800px;
+}
+
+#img4:target~.image_container {
+    left: -1200px;
+}
+
+.features {}
+
+.features_elements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 320px;
+    grid-gap: 3px;
+    justify-content: center;
+    margin: -10px 30px 10px 30px;
+    padding: 20px;
+}
+
+.features_element {
+    padding: 30px;
+    text-align: center;
+}
+
+.features_text {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.write {
+    margin: 30px auto;
+    width: 70%
+}
+
+.form_title {
+    font-family: "Garamond_Bold";
+    font-size: 15px;
+}
+
+.form_input {
+    font-family: "Garamond_Bold";
+    font-size: 15px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(206, 206, 206);
+}
+
+.contact_via {
+    margin-top: 18px;
+    display: flex;
+}
+
+.radio_title {
+    font-family: "Garamond_Bold";
+    font-size: 15px;
+    margin-left: 16px;
+}
+
+.user_data {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    text-align: center;
+}
+
+.social_footer {
+    margin-bottom: 20px;
+}
+
+.social_footer img {
+    width: 30px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.social_footer li {
+    display: inline;
+}
+
+/* 
+.aa {
+    font-family: 'Garamond_Regular';
+    font-size: 30px;
+}
+
+.bb {
+    background: yellow;
+    font-family: 'Garamond_Italic';
+    font-size: 30px;
+}
+
+.cc {
+    font-family: 'Garamond_Bold';
+    font-size: 30px;
+} */
