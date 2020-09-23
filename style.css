@@ -22,12 +22,12 @@
 body {
     font-family: 'Garamond_Regular';
     font-size: 18px;
-    width: 90%;
     margin: 0 auto;
 }
 
 h2 {
     text-align: center;
+    margin: 20px 30px 20px 30px;
 }
 
 .header_wrapper {
@@ -140,54 +140,19 @@ button {
     padding: 70px;
 }
 
-.slider_container {
-    position: relative;
-    width: 1600px;
-    height: 320px;
-    margin: 0 auto;
-    overflow: hidden;
-    text-align: center;
-}
-
-.slick-prev:before, .slick-next:before {
-    color: gray;
-}
-
-.slider_button {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    border-radius: 5px;
-    background-color: white;
-}
-
-#img1:target~.image_container {
-    left: 0px;
-}
-
-#img2:target~.image_container {
-    left: -400px;
-}
-
-#img3:target~.image_container {
-    left: -800px;
-}
-
-#img4:target~.image_container {
-    left: -1200px;
-}
-
 .features_elements {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     min-width: 320px;
-    grid-gap: 3px;
+    grid-gap: 1px;
     justify-content: center;
-    margin: -10px 30px 10px 30px;
-    padding: 20px;
+    margin: 20px 30px 20px 30px;
+    background: gray;
 }
 
 .features_element {
+    background-color: white;
+    padding: 10px;
     padding: 30px;
     text-align: center;
 }
@@ -199,7 +164,7 @@ button {
 
 .write {
     margin: 30px auto;
-    width: 70%
+    width: 70%;
 }
 
 .form_title {
@@ -233,6 +198,12 @@ button {
     justify-content: space-between;
 }
 
+.form_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 footer {
     text-align: center;
 }
@@ -250,6 +221,10 @@ footer {
 
 .social_footer li {
     display: inline;
+}
+
+a img:hover {
+    background-color: rgb(211, 205, 205);
 }
 
 @media screen and (max-width: 850px) {
@@ -275,5 +250,23 @@ footer {
     }
     .features_elements {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu_social {
+        display: none;
+    }
+    .features_elements {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hello, .story2 {
+        flex-direction: column-reverse;
+    }
+    .story1 {
+        flex-direction: column;
+    }
+    .hello_img, .hello_text, .story1_img, .story1_text, .story2_img, .story2_text {
+        width: 100%;
     }
 }

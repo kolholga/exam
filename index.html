@@ -12,7 +12,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -211,15 +210,16 @@
             </select><br>
 
             <label class="form_title">Message:</label><br>
-
             <textarea class="form_input" name="" id="" cols="100" rows="15"></textarea><br>
 
-            <label class="form_title">
-                <input type="checkbox">
-                I am a human
-            </label>
-
-            <input type="submit" value="SEND">
+            <div class="form_footer">
+                <label class="form_title">
+                    <input type="checkbox">
+                    I am a human
+                </label>
+                <button>SEND</button>
+            </div>
+            <!-- <input type="submit" value="SEND"> -->
         </form>
 
     </div>
@@ -245,30 +245,22 @@
                 arrows: true,
                 responsive: [
                     {
-                        breakpoint: 850,
+                        breakpoint: 890,
                         settings: {
                             slidesToShow: 2
                         }
                     },
                     {
-                        breakpoint: 600,
+                        breakpoint: 650,
                         settings: {
                             slidesToShow: 1
                         }
                     }
                 ]
             });
-
-
-
-
-
-
-
-
-
         });
     </script>
+
 </body>
 
 </html>
